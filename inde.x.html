@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Calculadora</title>
 </head>
+
 <body>
-    
+    <form class="calculadora" name="calc">
+        <input class="valor" type="text" name="txt" readonly="">
+        <span class="num" onclick="Document.calc.txt.valor +=''">C</span>
+        <span class="num" onclick="Document.calc.txt.valor +='/'">/</span>
+        <span class="num" onclick="Document.calc.txt.valor +='*'">*</span>
+        <span class="num" onclick="Document.calc.txt.valor +='7'">7</span>
+        <span class="num" onclick="Document.calc.txt.valor +='8'">8</span>
+        <span class="num" onclick="Document.calc.txt.valor +='9'">9</span>
+        <span class="num" onclick="Document.calc.txt.valor +='-'">-</span>
+        <span class="num" onclick="Document.calc.txt.valor +='4'">4</span>
+        <span class="num" onclick="Document.calc.txt.valor +='5'">5</span>
+        <span class="num" onclick="Document.calc.txt.valor +='6'">6</span>
+        <span class="num" onclick="Document.calc.txt.valor +='+'">+</span>
+        <span class="num" onclick="Document.calc.txt.valor +='3'">3</span>
+        <span class="num" onclick="Document.calc.txt.valor +='2'">2</span>
+        <span class="num" onclick="Document.calc.txt.valor +='1'">1</span>
+        <span class="num" onclick="Document.calc.txt.valor +='0'">0</span>
+        <span class="num" onclick="Document.calc.txt.valor +='00'">00</span>
+        <span class="num" onclick="Document.calc.txt.valor +='.'">.</span>
+        <span class="num" onclick="Document.calc.txt.valor +='='">=</span>
+    </form>    
 </body>
 </html>
