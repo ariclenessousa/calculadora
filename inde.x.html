@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 
     <title>Calculadora</title>
 </head>
 
 <body>
-    <form class="calculadora" name="calc">
-        <input class="valor" type="text" name="txt" readonly="">
-        <span class="num" onclick="Document.calc.txt.valor +=''">C</span>
-        <span class="num" onclick="Document.calc.txt.valor +='/'">/</span>
-        <span class="num" onclick="Document.calc.txt.valor +='*'">*</span>
-        <span class="num" onclick="Document.calc.txt.valor +='7'">7</span>
-        <span class="num" onclick="Document.calc.txt.valor +='8'">8</span>
-        <span class="num" onclick="Document.calc.txt.valor +='9'">9</span>
-        <span class="num" onclick="Document.calc.txt.valor +='-'">-</span>
-        <span class="num" onclick="Document.calc.txt.valor +='4'">4</span>
-        <span class="num" onclick="Document.calc.txt.valor +='5'">5</span>
-        <span class="num" onclick="Document.calc.txt.valor +='6'">6</span>
-        <span class="num" onclick="Document.calc.txt.valor +='+'">+</span>
-        <span class="num" onclick="Document.calc.txt.valor +='3'">3</span>
-        <span class="num" onclick="Document.calc.txt.valor +='2'">2</span>
-        <span class="num" onclick="Document.calc.txt.valor +='1'">1</span>
-        <span class="num" onclick="Document.calc.txt.valor +='0'">0</span>
-        <span class="num" onclick="Document.calc.txt.valor +='00'">00</span>
-        <span class="num" onclick="Document.calc.txt.valor +='.'">.</span>
-        <span class="num" onclick="Document.calc.txt.valor +='='">=</span>
-    </form>    
+   <div class="container">
+       <div class="calculadora dark">
+           <div class="theme-toggler active">
+               <i class="toggler-icon"></i>
+           </div>
+           <div class="display-screen">
+               <div id="display"></div>
+           </div>
+           <div class="buttons">
+               <table>
+                   <tr>
+                       <td><button class="btn-operador" id="clear">C</button></td>
+                       <td><button class="btn-operador" id="/">/</button></td>
+                       <td><button class="btn-operador" id="*">*</button></td>
+                       <td><button class="btn-operador" id="backspace"><</button></td>
+                   </tr>
+                   <tr>
+                       <td><button class="btn-numero" id="7">7</button></td>
+                       <td><button class="btn-numero" id="8">8</button></td>
+                       <td><button class="btn-numero" id="9">9</button></td>
+                       <td><button class="btn-operador" id="-">-</button></td>
+                   </tr>
+                   <tr>
+                       <td><button class="btn-numero" id="4">4</button></td>
+                       <td><button class="btn-numero" id="5">5</button></td>
+                       <td><button class="btn-numero" id="6">6</button></td>
+                       <td><button class="btn-operador" id="+">+</button></td>
+                   </tr>
+                   <tr>
+                       <td><button class="btn-numero" id="1">1</button></td>
+                       <td><button class="btn-numero" id="2">2</button></td>
+                       <td><button class="btn-numero" id="3">3</button></td>
+                       <td rowspan="2"><button class="btn-igual" id="igual">=</button></td>           
+                   </tr>
+
+                   <tr>
+                       <td><button class="btn-operador" id="(">(</button></td>
+                       <td><button class="btn-numero" id="0">0</button></td>
+                       <td><button class="btn-operador" id=")">)</button></td>
+                       
+                   </tr>
+               </table>
+           </div>
+       </div>
+   </div>
 </body>
 </html>
