@@ -2,7 +2,11 @@ const display = document.querySelector('#display');
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach((item)) => {
-    if (item id == 'clear') {
-        display.innerText = '';
-    }
+    item.onclick = () => {
+     if (item id == 'clear') {
+         display.innerText = '';
+     }else if (item id == 'backspace') {
+         let string = display.innerText.toString();
+        display innerText = string .substr*am string.lenght - 1);
+     }
 }
